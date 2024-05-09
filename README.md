@@ -2,7 +2,7 @@
 
 
 ## Mouse sensor - PMW3389DM 
-[Aliexpres]()
+10€ [Aliexpres]()
 
 ### 2V LDO regulator
 0,753€ [Mouser](https://www.mouser.es/ProductDetail/Texas-Instruments/TPS7A0220PDBVR?qs=OlC7AqGiEDm%252B3UaIvV5pNg%3D%3D)
