@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AH8503-FDC-7
+D DIODES INC. - AH8503-FDC-7 - Hall Effect Sensor, Linear, 400 A, U-DFN2020, 6 Pins, 1.6 V, 3.6 V
+K
+F https://www.diodes.com//assets/Datasheets/AH8503.pdf
+$ENDCMP
+#
+#End Doc Library

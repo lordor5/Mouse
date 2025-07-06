@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TLV70019DDCR
+D 200mA Low-Iq Low-Dropout (LDO) Regulator for Portables
+K
+F http://www.ti.com/lit/gpn/tlv700
+$ENDCMP
+#
+#End Doc Library

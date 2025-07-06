@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'ESP32_S3_MINI_1_N8'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Espressif Systems", "ESP32-S3-MINI-1-N8" (!) = "", "ESP32S3MINI1N8", "Other", "356-ESP32-S3-MINI1N8", "https://www.mouser.co.uk/ProductDetail/Espressif-Systems/ESP32-S3-MINI-1-N8?qs=XAiT9M5g4x82rl6F%2FIYUQg%3D%3D", "WiFi Development Tools - 802.11 [Engineering Samples] SMD Module, ESP32-S3FN8, 8 MB SPI Flash, PCB Antenna", "https://www.espressif.com/sites/default/files/documentation/esp32-s3-mini-1_mini-1u_datasheet_en.pdf", "2.55 mm"
+END_PART
+
+END.

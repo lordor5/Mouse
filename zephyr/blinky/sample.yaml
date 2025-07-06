@@ -1,0 +1,27 @@
+sample:
+  name: Blinky Sample
+tests:
+  sample.basic.blinky:
+    tags:
+      - LED
+      - gpio
+    filter: dt_enabled_alias_with_parent_compat("led0", "gpio-leds")
+    depends_on: gpio
+    harness: led
+    integration_platforms:
+      - frdm_k64f
+
+  sample.bluetooth.peripheral_hids:
+    harness: bluetooth
+    platform_allow: qemu_x86
+    tags: bluetooth
+    integration_platforms:
+      - qemu_x86
+  sample.bluetooth.peripheral_hids.no_authentication:
+    harness: bluetooth
+    extra_configs:
+      - CONFIG_SAMPLE_BT_USE_AUTHENTICATION=n
+    platform_allow: qemu_x86
+    tags: bluetooth
+    integration_platforms:
+      - qemu_x86

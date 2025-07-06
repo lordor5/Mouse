@@ -1,0 +1,28 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model AH8503-FDC-7
+#/1118592/1351761/2.50/7/2/Integrated Circuit
+DEF AH8503-FDC-7 IC 0 30 Y Y 1 F N
+F0 "IC" 1250 300 50 H V L CNN
+F1 "AH8503-FDC-7" 1250 200 50 H V L CNN
+F2 "SON65P201X201X63-7N" 1250 100 50 H I L CNN
+F3 "https://www.diodes.com//assets/Datasheets/AH8503.pdf" 1250 0 50 H I L CNN
+F4 "DIODES INC. - AH8503-FDC-7 - Hall Effect Sensor, Linear, 400 A, U-DFN2020, 6 Pins, 1.6 V, 3.6 V" 1250 -100 50 H I L CNN "Description"
+F5 "0.63" 1250 -200 50 H I L CNN "Height"
+F6 "621-AH8503-FDC-7" 1250 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/AH8503-FDC-7?qs=vJF2aRtctcByoAIcmr18Pg%3D%3D" 1250 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Diodes Incorporated" 1250 -500 50 H I L CNN "Manufacturer_Name"
+F9 "AH8503-FDC-7" 1250 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X OUTPUT 1 0 0 200 R 50 50 0 0 P
+X NC_1 2 0 -100 200 R 50 50 0 0 P
+X VDD 3 0 -200 200 R 50 50 0 0 P
+X EP 7 700 -700 200 U 50 50 0 0 P
+X NC_2 6 1400 0 200 L 50 50 0 0 P
+X GND 5 1400 -100 200 L 50 50 0 0 P
+X CNTRL 4 1400 -200 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 1200 100 1200 -500 200 -500 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

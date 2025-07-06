@@ -1,0 +1,18 @@
+.ESP32-S3-MINI-1-N8 :1 ;WiFi Development Tools - 802.11 [Engineering Samples] SMD Module, ESP32-S3FN8, 8 MB SPI Flash, PCB Antenna
+ESP32S3MINI1N8
+*STM IC
+*NGS
+*PLB 1="GND_1" 2="GND_2" 3="3V3" 4="IO0" 5="IO1" 6="IO2" 7="IO3" 8="IO4" 9="IO5" 10="IO6" 11="IO7" 12="IO8" 13="IO9" 14="IO10" 15="IO11" 16="IO12" 17="IO13" 18="IO14" 19="IO15" 20="IO16" 21="IO17" 22="IO18" 23="IO19" 24="IO20" 25="IO21" 26="IO26" 27="IO47" 28="IO33" 29="IO34" 30="IO48" 31="IO35" 32="IO36" 33="IO37" 34="IO38" 35="IO39" 36="IO40" 37="IO41" 38="IO42" 39="TXD0" 40="RXD0" 41="IO45" 42="GND_3" 43="GND_4" 44="IO46" 45="EN" 46="GND_5" 47="GND_6" &
+48="GND_7" 49="GND_8" 50="GND_9" 51="GND_10" 52="GND_11" 53="GND_12" 54="GND_13" 55="GND_14" 56="GND_15" 57="GND_16" 58="GND_17" 59="GND_18" 60="GND_19" 61="GND_20" 62="GND_21" 63="GND_22" 64="GND_23" 65="GND_24" 66="GND_25" 67="GND_26" 68="GND_27" 69="GND_28" 70="GND_29" 71="GND_30" 72="GND_31" 73="GND_32"
+*MXP 73
+*DFN ESP32-S3-MINI-1-N8
+~!Mouser Part Number (356-ESP32-S3-MINI1N8)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Espressif-Systems/ESP32-S3-MINI-1-N8?qs=XAiT9M5g4x82rl6F%2FIYUQg%3D%3D)
+~!Manufacturer_Name (Espressif Systems)
+~!Manufacturer_Part_Number (ESP32-S3-MINI-1-N8)
+~!Link Datasheet (https://www.espressif.com/sites/default/files/documentation/esp32-s3-mini-1_mini-1u_datasheet_en.pdf)
+~!Height (2.55mm)
+~!3D_Model (ESP32-S3-MINI-1-N8)
+ESP32-S3-MINI-1-N8
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 11.1!U 12.1!U 13.1!U 14.1!U 15.1!U 16.1!U 17.1!U 18.1!U 19.1!U 20.1!U 21.1!U 22.1!U 23.1!U 24.1!U 25.1!U 26.1!U 27.1!U 28.1!U 29.1!U 30.1!U 31.1!U 32.1!U 33.1!U 34.1!U 35.1!U 36.1!U 37.1!U 38.1!U 39.1!U 40.1!U 41.1!U 42.1!U 43.1!U 44.1!U 45.1!U 46.1!U 47.1!U 48.1!U 49.1!U 50.1!U 51.1!U 52.1!U 53.1!U 54.1!U 55.1!U 56.1!U 57.1!U 58.1!U 59.1!U 60.1!U 61.1!U 62.1!U 63.1!U 64.1!U 65.1!U 66.1!U &
+67.1!U 68.1!U 69.1!U 70.1!U 71.1!U 72.1!U 73.1!U 

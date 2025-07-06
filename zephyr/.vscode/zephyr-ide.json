@@ -1,0 +1,98 @@
+{
+  "projects": {
+    "blinky": {
+      "rel_path": "blinky",
+      "name": "blinky",
+      "buildConfigs": {
+        "build\\promicro_nrf52840\\nrf52840\\uf2": {
+          "board": "promicro_nrf52840/nrf52840/uf2",
+          "relBoardSubDir": "others\\promicro_nrf52840",
+          "name": "build\\promicro_nrf52840\\nrf52840\\uf2",
+          "westBuildArgs": "",
+          "westBuildCMakeArgs": " -DCONFIG_DEBUG_OPTIMIZATIONS=y -DCONFIG_DEBUG_THREAD_INFO=y ",
+          "confFiles": {
+            "config": [],
+            "extraConfig": [],
+            "overlay": [],
+            "extraOverlay": []
+          },
+          "runnerConfigs": {
+            "default": {
+              "runner": "default",
+              "name": "default",
+              "args": ""
+            }
+          }
+        }
+      },
+      "confFiles": {
+        "config": [],
+        "extraConfig": [
+          "blinky\\prj.conf"
+        ],
+        "overlay": [],
+        "extraOverlay": []
+      }
+    },
+    "peripheral_hids": {
+      "rel_path": "peripheral_hids",
+      "name": "peripheral_hids",
+      "buildConfigs": {
+        "build\\promicro_nrf52840\\nrf52840\\uf2": {
+          "board": "promicro_nrf52840/nrf52840/uf2",
+          "relBoardSubDir": "others\\promicro_nrf52840",
+          "name": "build\\promicro_nrf52840\\nrf52840\\uf2",
+          "westBuildArgs": "",
+          "westBuildCMakeArgs": " -DCONFIG_DEBUG_OPTIMIZATIONS=y -DCONFIG_DEBUG_THREAD_INFO=y ",
+          "confFiles": {
+            "config": [],
+            "extraConfig": [],
+            "overlay": [],
+            "extraOverlay": []
+          },
+          "runnerConfigs": {}
+        }
+      },
+      "confFiles": {
+        "config": [],
+        "extraConfig": [
+          "peripheral_hids\\Kconfig"
+        ],
+        "overlay": [],
+        "extraOverlay": []
+      }
+    },
+    "blinky_pwm": {
+      "rel_path": "blinky_pwm",
+      "name": "blinky_pwm",
+      "buildConfigs": {
+        "build\\promicro_nrf52840\\nrf52840\\uf2": {
+          "board": "promicro_nrf52840/nrf52840/uf2",
+          "relBoardSubDir": "others\\promicro_nrf52840",
+          "name": "build\\promicro_nrf52840\\nrf52840\\uf2",
+          "westBuildArgs": "",
+          "westBuildCMakeArgs": " -DCONFIG_DEBUG_OPTIMIZATIONS=y -DCONFIG_DEBUG_THREAD_INFO=y ",
+          "confFiles": {
+            "config": [],
+            "extraConfig": [],
+            "overlay": [],
+            "extraOverlay": []
+          },
+          "runnerConfigs": {
+            "default": {
+              "runner": "default",
+              "name": "default",
+              "args": ""
+            }
+          }
+        }
+      },
+      "confFiles": {
+        "config": [],
+        "extraConfig": [],
+        "overlay": [],
+        "extraOverlay": []
+      }
+    }
+  }
+}

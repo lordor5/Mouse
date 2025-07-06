@@ -1,0 +1,6 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "lib")(type "KiCad")(uri "C:/Users/Lordor/Documents/GitHub/Mouse/lib")(options "")(descr ""))
+  (lib (name "KiCad")(type "KiCad")(uri "C:/Users/Lordor/Documents/GitHub/Mouse/KiCad")(options "")(descr ""))
+  (lib (name "PAW3395")(type "KiCad")(uri "${KIPRJMOD}/PAW3395.pretty")(options "")(descr ""))
+)

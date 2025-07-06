@@ -1,0 +1,14 @@
+{
+  "terminal.integrated.defaultProfile.windows": "Zephyr IDE Terminal",
+  "C_Cpp.default.compileCommands": "${workspaceFolder}\\.vscode\\compile_commands.json",
+  "idf.portWin": "COM25",
+  "files.associations": {
+    "njk": "html",
+    "*.ino": "arduino-output",
+    ".env*": "dotenv",
+    ".dev.vars": "dotenv",
+    "*.toml": "dotenv",
+    "*.css.txt": "css",
+    "stddef.h": "c"
+  }
+}
