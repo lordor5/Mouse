@@ -1,9 +1,0 @@
-Manufacturer=Espressif Systems
-PartNumber=ESP32-S3-MINI-1-N8
-PartCategory=Integrated Circuit
-PackageCategory=Other
-PinCount=73
-Version=3.2
-Released=2022-06-06 08:28:53
-Downloaded=2025-04-01 19:16:39
-3D=Y

@@ -1,9 +1,0 @@
-Manufacturer=Diodes Incorporated
-PartNumber=AH8503-FDC-7
-PartCategory=Integrated Circuit
-PackageCategory=Small Outline No-lead
-PinCount=7
-Version=2.1
-Released=2022-01-18 12:22:38
-Downloaded=2025-03-29 22:56:48
-3D=Y
