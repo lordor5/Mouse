@@ -1,20 +1,87 @@
-# Mouse
+# Open Source Wireless Mouse
 
-## Mouse sensor - PMW3389DM
+A custom, high-performance wireless mouse project featuring custom PCB design, high-end optical sensors, and Hall effect switches. This repository contains all hardware schematics, PCB layouts, and firmware source code required to build the mouse from scratch. 
 
-10€ [Aliexpres]()
+> ⚠️ **WORK IN PROGRESS (WIP) / UNTESTED HARDWARE** ⚠️  
+> This project is currently in active development. The custom PCB design and firmware have **not yet been physically tested or manufactured**. The files are provided as-is. Build at your own risk!
 
-### 2V LDO regulator
+![Vista frontal de la PCB](./Img/PCBFront.png)
 
-0,753€ [Mouser](https://www.mouser.es/ProductDetail/Texas-Instruments/TPS7A0220PDBVR?qs=OlC7AqGiEDm%252B3UaIvV5pNg%3D%3D)
-no lo encuentro en aliexpres
+## Project Overview
 
-## Hall effect sensor - TLE493DP2B6A2HTSA1
+This project is built around the popular Nice!Nano (nRF52840) footprint and uses a combination of modern frameworks like Zephyr for the firmware. The hardware design is fully documented in KiCad and utilizes magnetic Hall effect sensors for durable, debounce-free clicking.
 
-2,59€ [Mouser](https://www.mouser.es/ProductDetail/Infineon-Technologies/TLE493DP2B6A2HTSA1?qs=eP2BKZSCXI7ESguqEcAKng%3D%3D)
+### Key Features
 
-3.19€ [Aliexpres link](https://es.aliexpress.com/item/1005005984466817.html?spm=a2g0o.productlist.main.1.6a2fJlP0JlP0PD&algo_pvid=b3e8cd07-7ee8-4a5f-a5d8-eb0b5b610729&algo_exp_id=b3e8cd07-7ee8-4a5f-a5d8-eb0b5b610729-0&pdp_npi=4%40dis%21EUR%2115.95%2112.76%21%21%21121.00%2196.80%21%402103847a17152469432924768e3437%2112000035182530819%21sea%21ES%210%21AB&curPageLogUid=PaYCu8zTW8jq&utparam-url=scene%3Asearch%7Cquery_from%3A)
+* **Custom KiCad PCB**: Fully routed custom board (`mouse.kicad_pcb`) with production-ready Gerber/BOM files.
+* **High-End Optical Sensor**: Utilizes the PAW3395 mouse sensor.
+* **Magnetic Switches**: Implements the TLE493DP2B6A2HTSA1 Hall effect sensor for primary buttons.
+* **Multi-Environment Firmware**: Codebase includes implementations in Zephyr RTOS.
 
-# Software
 
-[ESP32 BLE Mouse library](https://github.com/T-vK/ESP32-BLE-Mouse)
+---
+
+## 🛠️ Hardware & Bill of Materials (BOM)
+
+The hardware relies on readily available components. Below is the core BOM based on the current design:
+
+| Component | Description | Estimated Cost |
+| --- | --- | --- |
+| **PAW3395** | Primary Mouse Sensor | 10.00€ |
+| **TLE493DP2B6A2HTSA1** | Hall Effect Sensor (Switches) | 2.59€ |
+| **LDO Regulator** | Power Management | 0.753€ |
+| **Nice!Nano** | nRF52840 Microcontroller Board | - |
+| **TMAG5170A2QDGKR** | Alternative Magnetic Sensor | - |
+| **SSSS811101** | Power Switch | - |
+
+> **Note on Power:** The 2V LDO regulator is required for stable sensor operation and is currently sourced via Mouser, as it is difficult to find on AliExpress.
+
+
+---
+
+## 📂 Repository Structure
+
+```text
+.
+├── Code/
+│   ├── nrf/                  # Rust-based firmware using nrf-hal (blinky, pwm, i2s, usb)
+│   ├── PMW3389DM-master/     # Arduino polling/interrupt examples for the sensor
+│   └── zephyr/               # Zephyr RTOS implementation and board overlays
+├── Img/                      # Project images and renders (e.g., PCBFront.png)
+└── PCB/
+    ├── Components/           # Custom KiCad footprints and symbols (.step, .kicad_mod)
+    ├── production/           # Manufacturing files (BOM, positions, netlist, zip)
+    └── mouse.kicad_pro       # Main KiCad project file
+
+```
+
+---
+
+## 💻 Firmware & Software
+
+This repository offers multiple paths for firmware development depending on your preferred tech stack:
+
+1. **Rust (`Code/nrf`)**: Bare-metal Rust implementation utilizing `embassy` or `nrf-hal` for maximum memory safety and low power consumption (NOT TESTED).
+2. **Zephyr RTOS (`Code/zephyr`)**: Includes board overlays (e.g., `nrf52840dk`, `esp32c3`) and HID peripheral configurations for scalable RTOS development (NOT TESTED).
+3. **Arduino / ESP32 (`Code/PMW3389DM-master`)**: For rapid prototyping, utilizing the standard ESP32 BLE Mouse library.
+
+
+### Building the Firmware (Rust)
+
+Navigate to the `Code/nrf` directory and use Cargo to build the project for the `thumbv7em-none-eabi` target:
+
+```bash
+cd Code/nrf
+cargo build --release
+
+```
+
+---
+
+## 🏭 Manufacturing the PCB
+
+All necessary files to order the PCB from fabricators (like JLCPCB or PCBWay) are located in the `PCB/production/` folder.
+
+* **`mouse.zip`**: Contains the Gerber files.
+* **`bom.csv`**: Bill of Materials for SMT assembly.
+* **`positions.csv`**: CPL/Pick-and-place files.
